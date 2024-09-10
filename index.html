@@ -56,39 +56,25 @@
 
     <!-- Sección de programación -->
     <section id="programacion">
-        <h2>Programación por Días</h2>
-        <div class="flex-container">
-            <p><strong>Día:</strong> Lunes</p>
-            <p><strong>Tema:</strong> La Fe y la Esperanza</p>
-        </div>
-        <table class="program-table">
-            <tr>
-                <th>Turno</th>
-                <th>Actividad</th>
-                <th>Responsable</th>
-            </tr>
-            <tr>
-                <td>Mañana</td>
-                <td>Bienvenida</td>
-                <td>Líder de la Institución</td>
-            </tr>
-            <tr>
-                <td>Mañana</td>
-                <td>Oración 1</td>
-                <td>Voluntario</td>
-            </tr>
-            <tr>
-                <td>Mañana</td>
-                <td>Alabanza Especial</td>
-                <td>Coro Institucional</td>
-            </tr>
-            <tr>
-                <td>Mañana</td>
-                <td>Lista de Cantos</td>
-                <td>Director de Música</td>
-            </tr>
-        </table>
-    </section>
+      <h2>Programación por Días</h2>
+      <div class="program-select">
+          <label for="day-select">Selecciona un Día:</label>
+          <select id="day-select">
+              <option value="" disabled selected>Selecciona un día</option>
+              <option value="lunes:fe">Lunes - La Fe y la Esperanza</option>
+              <option value="martes:esperanza">Martes - La Esperanza</option>
+              <option value="miercoles:oracion">Miércoles - La Oración</option>
+              <option value="jueves:alabanza">Jueves - La Alabanza</option>
+              <option value="viernes:musica">Viernes - La Música</option>
+              <option value="sabado:reflexion">Sábado - La Reflexión</option>
+              <option value="domingo:celebracion">Domingo - La Celebración</option>
+          </select>
+      </div>
+      <div id="schedule-content">
+          <!-- La programación se cargará aquí -->
+      </div>
+  </section>
+  
 
     <!-- Formularios al final -->
     <div class="main-container">
@@ -143,6 +129,6 @@
     <p><strong>Decoración:</strong> Equipo de decoración</p>
     <p><strong>Personas Encargadas:</strong> Nombres de las personas a cargo</p>
 </section>
-
+<script src="script.js"></script>
 </body>
 </html>
