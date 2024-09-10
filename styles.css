@@ -1,0 +1,141 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #007ACC; /* Azul estilo Visual Studio */
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.column {
+  width: 45%;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+.bio-img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007ACC; /* Azul estilo Visual Studio */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005F9E; /* Azul más oscuro para hover */
+}
+
+/* Tabla de programación */
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.program-table th, .program-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.program-table th {
+  background-color: #f2f2f2;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .main-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .column {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 16px;
+  }
+
+  .bio-img {
+      width: 120px;
+  }
+
+  header {
+      padding: 10px;
+  }
+
+  header nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+}
