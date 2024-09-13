@@ -1,156 +1,262 @@
 /* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
+* {
+  padding: 0;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F4F4F4; /* Color de fondo claro */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  background-color: #007ACC; /* Azul estilo Visual Studio */
-  color: white;
-  padding: 15px;
+  background: url('https://cdn.pixabay.com/photo/2016/11/29/04/50/blur-1867402_1280.jpg') no-repeat center center/cover;
   text-align: center;
+  height: 500px;
+  border-radius: 0 0 50% 50% / 15%;
+  position: relative;
 }
 
-header nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-header nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-header nav ul li a {
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  padding: 100px 20px;
+  text-shadow: 1px 1px 2px #000;
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin-bottom: 20px;
+  color: #A07BF0; /* Morado oscuro */
+  animation: fadeIn 2s ease;
+}
+
+header h3, header p {
+  font-size: 24px;
+  color: #D3A6F2; /* Morado claro */
+  animation: fadeIn 3s ease;
+}
+
+/* Navbar */
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
   text-decoration: none;
   font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #A07BF0; /* Morado oscuro */
+  transition: background-color 0.3s;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
+nav ul li a:hover {
+  background-color: #D3A6F2; /* Morado claro */
+}
+
+/* Main Content */
+main {
+  padding: 20px;
 }
 
 .main-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  flex-direction: column;
 }
 
-.column {
-  width: 45%;
-}
-
-section {
-  margin: 20px 0;
+/* Sección en dos columnas */
+.section-column {
+  width: 100%;
   padding: 20px;
-  background-color: white;
-  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-h2 {
-  color: #333;
+/* Bienvenida y Biografía en la misma columna */
+.section-column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Biografía */
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9; /* Fondo gris claro para mayor contraste */
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .bio-img {
-  width: 150px;
-  height: auto;
   border-radius: 50%;
-  margin-right: 20px;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agregado para un efecto sutil */
 }
 
-.form-group {
+/* Texto de biografía */
+.bio-text {
+  max-width: 900px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #A07BF0, #D3A6F2); /* Degradado para mayor vitalidad */
+  color: #fff; /* Color del texto blanco para mejor contraste */
+}
+
+.bio-text h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px; /* Tamaño de fuente ajustado */
+  color: #fff; /* Color blanco para el encabezado */
   margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+.bio-text h4 {
+  font-size: 24px; /* Tamaño de fuente ajustado */
+  margin-top: 20px;
+  color: #F7B82C; /* Amarillo */
+  border-bottom: 2px solid #F7B82C; /* Amarillo */
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"], input[type="email"], textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.bio-text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #fff; /* Color del texto blanco para la lista */
 }
 
-button {
-  padding: 10px 15px;
-  background-color: #007ACC; /* Azul estilo Visual Studio */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.bio-text li {
+  margin-bottom: 8px; /* Espacio reducido para un diseño más compacto */
+  font-size: 14px; /* Tamaño de fuente ajustado */
+  line-height: 1.6;
 }
 
-button:hover {
-  background-color: #005F9E; /* Azul más oscuro para hover */
-}
-
-/* Estilo para el select box */
+/* Programación */
 .program-select {
   margin-bottom: 20px;
+}
+
+.program-select label {
+  font-weight: bold;
 }
 
 #day-select {
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 300px;
+  border: 2px solid #A07BF0; /* Morado oscuro */
+  border-radius: 10px;
+  transition: border 0.3s ease;
 }
 
-/* Estilo para la tabla de programación */
-.program-table {
+#day-select:hover {
+  border: 2px solid #D3A6F2; /* Morado claro */
+}
+
+/* Tablas */
+table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.program-table th, .program-table td {
+th, td {
+  padding: 10px;
   border: 1px solid #ddd;
-  padding: 8px;
   text-align: left;
 }
 
-.program-table th {
-  background-color: #f2f2f2;
+th {
+  background-color: #A07BF0; /* Morado oscuro */
+  color: #fff;
 }
 
+td {
+  background-color: #F9F9F9;
+}
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .main-container {
-      flex-direction: column;
-      align-items: center;
+@media screen and (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
-  .column {
-      width: 100%;
+  thead {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  td {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    padding-right: 20px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
   }
 }
 
-@media (max-width: 480px) {
-  body {
-      font-size: 16px;
-  }
+/* Formulario de decisión */
+iframe {
+  border: none;
+  width: 100%;
+  height: 480px;
+}
 
-  .bio-img {
-      width: 120px;
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-
-  header {
-      padding: 10px;
-  }
-
-  header nav ul li {
-      display: block;
-      margin-bottom: 10px;
+  to {
+    opacity: 1;
   }
 }

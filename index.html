@@ -5,122 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana de Oración</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
 </head>
 <body>
-
 <!-- Header con navegación -->
 <header>
-    <h1>Semana de Oración</h1>
-    <nav>
-        <ul>
-            <li><a href="#presentacion-see">Presentación</a></li>
-            <li><a href="#bienvenida">Bienvenida</a></li>
-            <li><a href="#biografia">Biografía</a></li>
-            <li><a href="#programacion">Programación</a></li>
-            <li><a href="#comisiones">Comisiones</a></li>
-            <li><a href="#pedidos-oracion">Pedidos de Oración</a></li>
-            <li><a href="#deseo-bautizarme">Bautismo</a></li>
-        </ul>
-    </nav>
+    <div class="overlay">
+        <h1>I Semana de Énfasis Espiritual</h1>
+        <h3>14 SETIEMBRE AL 21 DE SETIEMBRE</h3>
+        <p>Lugar: Auditorio Fernando Stahl</p>
+        <nav>
+            <ul>
+                <li><a href="#bienvenida">Bienvenida</a></li>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#programacion">Programación</a></li>
+                <li><a href="#comisiones">Comisiones</a></li>
+                <li><a href="#pedidos-de-oracion">Mi decisión</a></li>
+                <li><a href="#bautismo">Bautismo</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <!-- Sección principal en dos columnas -->
 <main>
     <div class="main-container">
+        <section id="bienvenida" class="section-column">
+            <h2>Bienvenida</h2>
+            <p>Mensaje de bienvenida de parte de la institución y líderes organizadores.</p>
+        </section>
 
-        <!-- Primera columna -->
-        <div class="column">
-            <section id="presentacion-see">
-                <h2>Presentación de la SEE</h2>
-                <p>Breve presentación sobre la importancia de esta semana de oración y el propósito de los encuentros espirituales.</p>
-            </section>
-
-            <section id="bienvenida">
-                <h2>Bienvenida</h2>
-                <p>Mensaje de bienvenida de parte de la institución y líderes organizadores.</p>
-            </section>
-        </div>
-
-        <!-- Segunda columna -->
-        <div class="column">
-            <section id="biografia">
-                <h2>Biografía del Orador</h2>
-                <div class="container">
-                    <img src="orador.jpg" alt="Imagen del Orador" class="bio-img">
-                    <p>Biografía del orador invitado con su trayectoria y testimonios inspiradores.</p>
-                </div>
-            </section>
-        </div>
-
+        <!-- Sección de Biografía -->
+        <section id="biografia" class="section-column bio-container">
+            <img src="https://i.pinimg.com/736x/19/26/df/1926dfdd3728a7a47684bcd4b27558dd.jpg" alt="Imagen del Orador" class="bio-img">
+            <div class="bio-text">
+                <h3>Juan Pérez</h3>
+                <h4>Biografía</h4>
+                <p><strong>Lugar de nacimiento:</strong> Juliaca, Puno, Perú.</p>
+                <p><strong>Familia:</strong> Casado con la Profesora Fany Apaza. Tiene dos hijos: Daniel Alejandro (15) y María Alessandra (13).</p>
+                <p><strong>Estudios:</strong></p>
+                <ul>
+                    <li>Ingeniería en Industrias Alimentarias, Universidad Peruana Unión (1998).</li>
+                    <li>Maestría (2002) y Doctorado (2005) en Ingeniería de Alimentos, Universidade Estadual de Campinas (UNICAMP), Brasil.</li>
+                    <li>Post doctorado en Tecnología de Extracción con Fluidos Supercríticos, UNICAMP, Brasil (2005).</li>
+                    <li>Post doctorado en Microencapsulación de Compuestos Bioactivos, University of Alberta, Canadá (2010).</li>
+                    <li>Especialización en Gestión de Proyectos, Universidad ESAN, Perú (2013).</li>
+                    <li>Especialización en Gestión y Liderazgo de la Educación Superior, Organización Interamericana para la Educación Superior, Canadá (2020).</li>
+                    <li>Diplomado en Teología y Estudios Adventistas, UNASP, Brasil (2019).</li>
+                    <li>Cursando la Maestría en Teología Sistemática, UNASP.</li>
+                </ul>
+                <p><strong>Producción intelectual:</strong></p>
+                <ul>
+                    <li>Desarrolló diversos proyectos de investigación financiados por instituciones nacionales e internacionales en Brasil, Perú, Canadá y Estados Unidos.</li>
+                    <li>Publicó varios artículos científicos en revistas indexadas y congresos de investigación, así como un libro y diversos capítulos de libros.</li>
+                    <li>Posee una patente.</li>
+                    <li>Fue revisor de artículos en diversas revistas científicas y congresos.</li>
+                    <li>Fue miembro de diferentes organizaciones científicas nacionales e internacionales.</li>
+                    <li>Por sus actividades de investigación, fue reconocido como Investigador Certificado por el Consejo Nacional de Ciencia y Tecnología del Perú.</li>
+                </ul>
+                <p><strong>Trabajo:</strong></p>
+                <ul>
+                    <li>Desempeñó diferentes funciones administrativas en la UPeU entre 2005 – 2014: Decano, Secretario Académico y Director de Investigación de la Facultad de Ingeniería y Arquitectura; Director de la Escuela de Ingeniería de Alimentos y Director del Centro de Recursos de Geociencias.</li>
+                    <li>Docente de pre y posgrado, alcanzando la categoría de Docente Principal.</li>
+                    <li>Entre enero y junio de 2015 fue Coordinador del Programa Adventista de Evaluación de la Calidad Educativa en la División Sudamericana.</li>
+                    <li>Posteriormente elegido en julio del mismo año como Director Asociado de Educación de la DSA, cargo que desempeñó hasta septiembre de 2023.</li>
+                    <li>En abril de 2023, fue elegido como Director Asociado de Educación de la Conferencia General, iniciando sus actividades en octubre de ese año.</li>
+                    <li>También se desempeña como editor asociado de The Journal of Adventist Education (ediciones internacionales).</li>
+                    <li>Es Pastor Ordenado desde julio de 2023.</li>
+                </ul>
+            </div>
+        </section>
     </div>
 
     <!-- Sección de programación -->
     <section id="programacion">
-      <h2>Programación por Días</h2>
-      <div class="program-select">
-          <label for="day-select">Selecciona un Día:</label>
-          <select id="day-select">
-              <option value="" disabled selected>Selecciona un día</option>
-              <option value="lunes:fe">Lunes - La Fe y la Esperanza</option>
-              <option value="martes:esperanza">Martes - La Esperanza</option>
-              <option value="miercoles:oracion">Miércoles - La Oración</option>
-              <option value="jueves:alabanza">Jueves - La Alabanza</option>
-              <option value="viernes:musica">Viernes - La Música</option>
-              <option value="sabado:reflexion">Sábado - La Reflexión</option>
-              <option value="domingo:celebracion">Domingo - La Celebración</option>
-          </select>
-      </div>
-      <div id="schedule-content">
-          <!-- La programación se cargará aquí -->
-      </div>
-  </section>
-  
+        <h2>Programación por Días</h2>
+        <div class="program-select">
+            <label for="day-select">Selecciona un Día:</label>
+            <select id="day-select">
+                <option value="" disabled selected>Selecciona un día</option>
+                <option value="lunes:fe">Lunes - La Fe y la Esperanza</option>
+                <option value="martes:esperanza">Martes - La Esperanza</option>
+                <option value="miercoles:oracion">Miércoles - La Oración</option>
+                <option value="jueves:alabanza">Jueves - La Alabanza</option>
+                <option value="viernes:musica">Viernes - La Música</option>
+            </select>
+        </div>
+        <div id="schedule-content">
+            <!-- La programación se cargará aquí -->
+        </div>
+    </section>
 
     <!-- Formularios al final -->
     <div class="main-container">
-
-        <!-- Pedidos de Oración -->
-        <div class="column">
-            <section id="pedidos-oracion">
-                <h2>Pedidos de Oración</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="nombre">Nombre Completo:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="oracion">Pedido de Oración:</label>
-                        <textarea id="oracion" name="oracion" rows="4" required></textarea>
-                    </div>
-                    <button type="submit">Enviar Pedido</button>
-                </form>
-            </section>
-        </div>
-
         <!-- Deseo Bautizarme -->
-        <div class="column">
-            <section id="deseo-bautizarme">
-                <h2>Deseo Bautizarme</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="nombre-bautismo">Nombre Completo:</label>
-                        <input type="text" id="nombre-bautismo" name="nombre-bautismo" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono de Contacto:</label>
-                        <input type="text" id="telefono" name="telefono" required>
-                    </div>
-                    <button type="submit">Solicitar Bautismo</button>
-                </form>
-            </section>
-        </div>
-
+        <section id="bautismo" class="section-column">
+            <h2>Mi decisión</h2>
+            <iframe width="640px" height="480px" src="https://forms.office.com/r/Jcq6147YqT?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+        </section>
     </div>
-
 </main>
 
 <!-- Sección de comisiones -->
@@ -129,6 +112,7 @@
     <p><strong>Decoración:</strong> Equipo de decoración</p>
     <p><strong>Personas Encargadas:</strong> Nombres de las personas a cargo</p>
 </section>
+
 <script src="script.js"></script>
 </body>
 </html>
