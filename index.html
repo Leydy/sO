@@ -6,73 +6,56 @@
     <title>Semana de Oración</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Header con navegación -->
+<!-- Nuevo Header con imagen de fondo -->
 <header>
-    <div class="overlay">
-        <h1>I Semana de Énfasis Espiritual</h1>
+    <div class="header-content">
+        <h1 class="titulo-amigo">MI AMIGO EL</h1>
+        <h1 class="titulo-espiritu">Espíritu</h1>
+        <h1 class="titulo-santo">Santo</h1>
         <h3>14 SETIEMBRE AL 21 DE SETIEMBRE</h3>
         <p>Lugar: Auditorio Fernando Stahl</p>
-        <nav>
-            <ul>
-                <li><a href="#bienvenida">Bienvenida</a></li>
-                <li><a href="#biografia">Biografía</a></li>
-                <li><a href="#programacion">Programación</a></li>
-                <li><a href="#comisiones">Comisiones</a></li>
-                <li><a href="#pedidos-de-oracion">Mi decisión</a></li>
-                <li><a href="#bautismo">Bautismo</a></li>
-            </ul>
-        </nav>
     </div>
 </header>
 
-<!-- Sección principal en dos columnas -->
-<main>
-    <div class="main-container">
-        <section id="bienvenida" class="section-column">
+<!-- Nueva Barra de Navegación -->
+<div class="nav-container">
+    <nav>
+        <ul>
+            <li><a href="#bienvenida">Bienvenida</a></li>
+            <li><a href="#programacion">Programación</a></li>
+            <li><a href="#pedidos-de-oracion">Mi decisión</a></li>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#comisiones">Comisiones</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Sección principal en dos columnas: Bienvenida y Biografía ocupando todo el ancho -->
+<main style="margin-top: 30px;">
+    <div class="main-container" style="display: flex; justify-content: space-between; align-items: stretch; width: 100%; padding: 0 20px; box-sizing: border-box;">
+        <!-- Sección de Bienvenida -->
+        <section id="bienvenida" class="section-column" style="flex: 1; margin-right: 20px; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 10px;">
             <h2>Bienvenida</h2>
+            <img src="img/so.jpeg" alt="Semana de Oración" style="width: 100%; height: auto; margin-bottom: 20px;">
             <p>Mensaje de bienvenida de parte de la institución y líderes organizadores.</p>
         </section>
 
         <!-- Sección de Biografía -->
-        <section id="biografia" class="section-column bio-container">
-            <img src="https://i.pinimg.com/736x/19/26/df/1926dfdd3728a7a47684bcd4b27558dd.jpg" alt="Imagen del Orador" class="bio-img">
+        <section id="biografia" class="section-column bio-container" style="flex: 1; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+            <img src="https://files.adventistas.org/noticias/es/2023/04/11162308/Socrates-Quispe-Condori-copiar-1536x1043.jpg" alt="Imagen del Orador" class="bio-img" style="width: 150px; height: 150px; margin-bottom: 20px;">
             <div class="bio-text">
-                <h3>Juan Pérez</h3>
+                <h3>Sócrates Quispe</h3>
                 <h4>Biografía</h4>
-                <p><strong>Lugar de nacimiento:</strong> Juliaca, Puno, Perú.</p>
-                <p><strong>Familia:</strong> Casado con la Profesora Fany Apaza. Tiene dos hijos: Daniel Alejandro (15) y María Alessandra (13).</p>
-                <p><strong>Estudios:</strong></p>
-                <ul>
-                    <li>Ingeniería en Industrias Alimentarias, Universidad Peruana Unión (1998).</li>
-                    <li>Maestría (2002) y Doctorado (2005) en Ingeniería de Alimentos, Universidade Estadual de Campinas (UNICAMP), Brasil.</li>
-                    <li>Post doctorado en Tecnología de Extracción con Fluidos Supercríticos, UNICAMP, Brasil (2005).</li>
-                    <li>Post doctorado en Microencapsulación de Compuestos Bioactivos, University of Alberta, Canadá (2010).</li>
-                    <li>Especialización en Gestión de Proyectos, Universidad ESAN, Perú (2013).</li>
-                    <li>Especialización en Gestión y Liderazgo de la Educación Superior, Organización Interamericana para la Educación Superior, Canadá (2020).</li>
-                    <li>Diplomado en Teología y Estudios Adventistas, UNASP, Brasil (2019).</li>
-                    <li>Cursando la Maestría en Teología Sistemática, UNASP.</li>
-                </ul>
-                <p><strong>Producción intelectual:</strong></p>
-                <ul>
-                    <li>Desarrolló diversos proyectos de investigación financiados por instituciones nacionales e internacionales en Brasil, Perú, Canadá y Estados Unidos.</li>
-                    <li>Publicó varios artículos científicos en revistas indexadas y congresos de investigación, así como un libro y diversos capítulos de libros.</li>
-                    <li>Posee una patente.</li>
-                    <li>Fue revisor de artículos en diversas revistas científicas y congresos.</li>
-                    <li>Fue miembro de diferentes organizaciones científicas nacionales e internacionales.</li>
-                    <li>Por sus actividades de investigación, fue reconocido como Investigador Certificado por el Consejo Nacional de Ciencia y Tecnología del Perú.</li>
-                </ul>
-                <p><strong>Trabajo:</strong></p>
-                <ul>
-                    <li>Desempeñó diferentes funciones administrativas en la UPeU entre 2005 – 2014: Decano, Secretario Académico y Director de Investigación de la Facultad de Ingeniería y Arquitectura; Director de la Escuela de Ingeniería de Alimentos y Director del Centro de Recursos de Geociencias.</li>
-                    <li>Docente de pre y posgrado, alcanzando la categoría de Docente Principal.</li>
-                    <li>Entre enero y junio de 2015 fue Coordinador del Programa Adventista de Evaluación de la Calidad Educativa en la División Sudamericana.</li>
-                    <li>Posteriormente elegido en julio del mismo año como Director Asociado de Educación de la DSA, cargo que desempeñó hasta septiembre de 2023.</li>
-                    <li>En abril de 2023, fue elegido como Director Asociado de Educación de la Conferencia General, iniciando sus actividades en octubre de ese año.</li>
-                    <li>También se desempeña como editor asociado de The Journal of Adventist Education (ediciones internacionales).</li>
-                    <li>Es Pastor Ordenado desde julio de 2023.</li>
-                </ul>
+                <p>Nacido en Juliaca, Puno, Perú, está casado con la profesora Fany Apaza y tiene dos hijos: Daniel Alejandro (15) y María Alessandra (13).</p>
+                <h4>Formación Académica</h4>
+                <p>Ingeniero en Industrias Alimentarias (UPeU), con maestría y doctorado en Ingeniería de Alimentos (UNICAMP, Brasil). Realizó dos post doctorados en Brasil y Canadá, y cuenta con especializaciones en Gestión de Proyectos, Educación Superior y Teología. Actualmente cursa una maestría en Teología Sistemática.</p>
+                <h4>Trayectoria Profesional</h4>
+                <p>Ha desarrollado proyectos de investigación en varios países, publicado artículos científicos y un libro, y cuenta con una patente. Ha ocupado cargos administrativos y docentes en la UPeU y fue Director Asociado de Educación de la DSA. Desde 2023, es Director Asociado de Educación de la Conferencia General y Pastor Ordenado.</p>
             </div>
         </section>
     </div>
@@ -84,11 +67,11 @@
             <label for="day-select">Selecciona un Día:</label>
             <select id="day-select">
                 <option value="" disabled selected>Selecciona un día</option>
-                <option value="lunes:fe">Lunes - La Fe y la Esperanza</option>
-                <option value="martes:esperanza">Martes - La Esperanza</option>
-                <option value="miercoles:oracion">Miércoles - La Oración</option>
-                <option value="jueves:alabanza">Jueves - La Alabanza</option>
-                <option value="viernes:musica">Viernes - La Música</option>
+                <option value="lunes:fe">Lunes - Un Amigo siempre presente</option>
+                <option value="martes:esperanza">Martes - Un Amigo que te capacita</option>
+                <option value="miercoles:oracion">Miércoles - Un Amigo que puede transformar tu vida</option>
+                <option value="jueves:alabanza">Jueves - Un Amigo que te lleva a la salvación</option>
+                <option value="viernes:musica">Viernes - Un amigo que no quiere dejarte</option>
             </select>
         </div>
         <div id="schedule-content">
@@ -107,10 +90,116 @@
 </main>
 
 <!-- Sección de comisiones -->
-<section id="comisiones">
+<section id="comisiones" class="section-column">
     <h2>Comisiones</h2>
-    <p><strong>Decoración:</strong> Equipo de decoración</p>
-    <p><strong>Personas Encargadas:</strong> Nombres de las personas a cargo</p>
+    <table>
+        <thead>
+            <tr>
+                <th>N°</th>
+                <th>Comisiones</th>
+                <th>Responsables</th>
+                <th>Funciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Comité ejecutivo</td>
+                <td>Dr. Carlos Coaquira <br> Mg. Rufo Atamari <br> Pr. Michael Ccoa <br> Pr. Sandro Panduro <br> Ing. Janeth Huanca</td>
+                <td>Lideran todas las comisiones y la programación en general</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Coordinación general</td>
+                <td>Pr. Josué Huaycani <br> Pr. Juan Carlos Torres <br> Lic. Willy Gonzales</td>
+                <td>Organizan y supervisan el cumplimiento de las funciones</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Secretaría</td>
+                <td>Asist. Blandy Tonconi</td>
+                <td>Elabora cartas y comunicados</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Programación</td>
+                <td>Pr. Juan Carlos Torres <br> a). Programa y pauteo: Pr. Juan Carlos Torres <br> b). Pauteo: Pr. Jesús Quispe <br> c). Site web o app de la SEE: Ing. Jenson Chambi <br> d). Retos: Lic. Sara Pazo <br> e). Animadores: Pr. Fredy Alcozer <br> f). Ujieres: Lic. Vasty León</td>
+                <td>Elabora el programa, coordina los horarios y la programación general <br> Controla con cuidado el tiempo <br> Elabora página o app de la SEE <br> Organiza los retos <br> Coordina con directores de cantos <br> Organiza el rol de ujieres</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Atención al predicador</td>
+                <td>Pr. Michael Ccoa <br> Pr. Josué Huaycani <br> Asist. Blandy Tonconi</td>
+                <td>Encargados del viaje del predicador, estadía y alimentación</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Finanzas</td>
+                <td>Asist. Blandy Tonconi</td>
+                <td>Viabiliza el pago de comisiones y coordina con tesorería <br> Presenta informe de gastos</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Control de asistencia</td>
+                <td>Ing. Janet Huanca <br> Lic. Marleny Condori <br> Mg. Ana Ramos</td>
+                <td>Control de asistencia de docentes y estudiantes</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Logística y limpieza</td>
+                <td>CP David Puma <br> Lic. Juan Cauna <br> Hna. María Turpo</td>
+                <td>Coordina ambiente, limpieza, sillas y mantenimiento del auditorio</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Decoración</td>
+                <td>Lic. Willy Gonzales <br> Arq. Juan Almirón</td>
+                <td>Diseñan y establecen la decoración de la SEE</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Bautismo y celebración</td>
+                <td>Pr. Sandro Panduro <br> Pr. Juan Carlos Torres <br> Capellanes <br> a). Candidatos: Capellanes <br> b). Recepción: CPC. Luis Haro y capellanes <br> c). Consultas: Pr. Josué Huaycani <br> d). Armado de vestidores: Mg. Edgar Mamani / Lic. Nancy Flores / CPC. David Puma <br> e). Fichas bautismales: Asist. Blandy Tonconi <br> f). Jardín de oración: Psic. Ruví Mercado</td>
+                <td>Coordina captación, estudios bíblicos, toma de decisiones y bautismos <br> Organiza el almuerzo de celebración</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Producción de medios</td>
+                <td>Lic. Willy Gonzales <br> a). Audio: André Sutta <br> b). Transmisión: Oscar Osorio <br> c). Redes Sociales: Sara Pazo <br> d). Camarógrafos</td>
+                <td>Elabora afiches y publicidad <br> Gestiona el audio y la transmisión en vivo <br> Maneja redes sociales</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Música</td>
+                <td>Pr. Israel Fernández <br> a). Dirección cantos: Pr. Israel Fernández <br> b). Orquestina: Pr. Isaac Rodríguez</td>
+                <td>Mantiene la música en vivo</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Primeros auxilios</td>
+                <td>Lic. Vasty León / Lic. Mayra</td>
+                <td>Disponibles para emergencias durante el programa</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Energía eléctrica</td>
+                <td>Ing. Daniel López</td>
+                <td>Coordina equipo electrógeno en caso de falla de energía</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Concierto musical</td>
+                <td>Pr. Israel Fernández / Pr. Isaac Rodríguez</td>
+                <td>Organizan el concierto musical con invitado especial</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Seguridad</td>
+                <td>CPC. Kenny Guerra</td>
+                <td>Mantienen el orden en el ingreso y salida de los estudiantes</td>
+            </tr>
+        </tbody>
+    </table>
 </section>
 
 <script src="script.js"></script>

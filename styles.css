@@ -12,107 +12,109 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* Nuevo estilo del Header */
 header {
-  background: url('https://cdn.pixabay.com/photo/2016/11/29/04/50/blur-1867402_1280.jpg') no-repeat center center/cover;
-  text-align: center;
-  height: 500px;
-  border-radius: 0 0 50% 50% / 15%;
-  position: relative;
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/04/50/blur-1867402_1280.jpg');
+    background-size: cover; 
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-header .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 100px 20px;
-  text-shadow: 1px 1px 2px #000;
-  position: relative;
-  z-index: 2;
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
 }
 
-header h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 80px;
-  margin-bottom: 20px;
-  color: #A07BF0; /* Morado oscuro */
-  animation: fadeIn 2s ease;
+.header-content h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    margin: 0.2em 0;
+    color: #A07BF0;
 }
 
-header h3, header p {
-  font-size: 24px;
-  color: #D3A6F2; /* Morado claro */
-  animation: fadeIn 3s ease;
+.header-content h3, .header-content p {
+    font-size: 1.2em;
+    margin: 0.2em 0;
 }
 
-/* Navbar */
-nav {
-  margin-top: 20px;
+/* Nueva barra de navegación */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    background-color: #A07BF0;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-  display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 50px;
-  color: #fff;
-  background-color: #A07BF0; /* Morado oscuro */
-  transition: background-color 0.3s;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: #D3A6F2; /* Morado claro */
+    background-color: #D27F6D;
 }
 
-/* Main Content */
-main {
-  padding: 20px;
-}
-
+/* Sección principal con dos columnas */
 .main-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Sección en dos columnas */
+/* Asegura que las columnas ocupen el espacio */
 .section-column {
-  width: 100%;
+  flex: 1;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-/* Bienvenida y Biografía en la misma columna */
-.section-column-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Para que la última columna no tenga margen derecho */
+.section-column:last-child {
+  margin-right: 0;
 }
 
-/* Biografía */
+/* Estilos específicos para la biografía */
 .bio-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 40px;
-  background-color: #f9f9f9; /* Fondo gris claro para mayor contraste */
+  background-color: #f9f9f9; /* Fondo gris claro */
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .bio-img {
@@ -120,76 +122,41 @@ main {
   width: 180px;
   height: 180px;
   margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agregado para un efecto sutil */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
 }
 
-/* Texto de biografía */
 .bio-text {
-  max-width: 900px;
+  max-width: 100%;
   text-align: left;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #A07BF0, #D3A6F2); /* Degradado para mayor vitalidad */
-  color: #fff; /* Color del texto blanco para mejor contraste */
+  background: linear-gradient(135deg, #A07BF0, #D3A6F2);
+  color: #fff; /* Texto blanco */
 }
 
 .bio-text h3 {
   font-family: 'Dancing Script', cursive;
-  font-size: 32px; /* Tamaño de fuente ajustado */
-  color: #fff; /* Color blanco para el encabezado */
+  font-size: 32px;
+  color: #fff;
   margin-bottom: 15px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .bio-text h4 {
-  font-size: 24px; /* Tamaño de fuente ajustado */
+  font-size: 24px;
   margin-top: 20px;
   color: #F7B82C; /* Amarillo */
-  border-bottom: 2px solid #F7B82C; /* Amarillo */
+  border-bottom: 2px solid #F7B82C;
   padding-bottom: 8px;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.bio-text ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  color: #fff; /* Color del texto blanco para la lista */
-}
-
-.bio-text li {
-  margin-bottom: 8px; /* Espacio reducido para un diseño más compacto */
-  font-size: 14px; /* Tamaño de fuente ajustado */
-  line-height: 1.6;
-}
-
-/* Programación */
-.program-select {
-  margin-bottom: 20px;
-}
-
-.program-select label {
-  font-weight: bold;
-}
-
-#day-select {
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #A07BF0; /* Morado oscuro */
-  border-radius: 10px;
-  transition: border 0.3s ease;
-}
-
-#day-select:hover {
-  border: 2px solid #D3A6F2; /* Morado claro */
-}
-
-/* Tablas */
+/* Estilo responsivo para tablas */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  font-size: 14px; /* Ajustar el tamaño de fuente para que la tabla sea más compacta */
 }
 
 th, td {
@@ -201,19 +168,24 @@ th, td {
 th {
   background-color: #A07BF0; /* Morado oscuro */
   color: #fff;
+  font-weight: bold;
+  text-align: center;
 }
 
 td {
   background-color: #F9F9F9;
+  text-align: left;
 }
 
-@media screen and (max-width: 600px) {
+/* Hacer que la tabla se vea responsiva en pantallas pequeñas */
+@media screen and (max-width: 768px) {
   table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
   }
 
+  /* Ocultar el encabezado de las tablas en dispositivos pequeños */
   thead {
     display: none;
   }
@@ -221,42 +193,20 @@ td {
   tr {
     display: block;
     margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
   }
 
   td {
     display: block;
     text-align: right;
-    font-size: 14px;
-    border: none;
-    position: relative;
-    padding-left: 50%;
-    padding-right: 20px;
   }
 
   td::before {
     content: attr(data-label);
     position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 10px;
+    left: 10px;
     font-weight: bold;
     text-align: left;
-  }
-}
-
-/* Formulario de decisión */
-iframe {
-  border: none;
-  width: 100%;
-  height: 480px;
-}
-
-/* Animaciones */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }

@@ -18,16 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
                             <th>Canto de Despedida</th>
                         </tr>
                         <tr>
-                            <td>Juan Pérez</td>
-                            <td>12/09/2024</td>
-                            <td>Grupo Alabanza</td>
-                            <td>María López</td>
-                            <td>Pastor Smith</td>
-                            <td>Premio a la Fe</td>
-                            <td>Banda Esperanza</td>
-                            <td>La Salvación</td>
-                            <td>Carlos Soto</td>
-                            <td>Hasta Pronto</td>
+                            <td>FCE</td>
+                            <td>Lunes 16</td>
+                            <td>Coral UPeU</td>
+                            <td>Daniel Pari / Katerine Condori</td>
+                            <td>Alexander De La Cruz</td>
+                            <td>Sara Pazo</td>
+                            <td>Ana Tito</td>
+                            <td>"Un Amigo siempre presente"</td>
+                            <td>Sandro Panduro / David Mamani</td>
+                            <td>Coral UPeU</td>
                         </tr>
                     </table>
                     <h3>Turno Tarde</h3>
@@ -45,16 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
                             <th>Canto de Despedida</th>
                         </tr>
                         <tr>
-                            <td>Lucía González</td>
-                            <td>12/09/2024</td>
-                            <td>Coral Alabanza</td>
-                            <td>Pedro Gómez</td>
-                            <td>Pastor Morales</td>
-                            <td>Premio al Valor</td>
-                            <td>Coro Esperanza</td>
-                            <td>La Gracia Divina</td>
-                            <td>Jorge Ramírez</td>
-                            <td>Hasta Mañana</td>
+                            <td>FCE</td>
+                            <td>Lunes 16</td>
+                            <td>Coral UPeU</td>
+                            <td>Sarai Cuti / Kevin Hilasaca</td>
+                            <td>Edgar Mamani</td>
+                            <td>Sara Pazo</td>
+                            <td>Alejandro Apaza</td>
+                            <td>"Un Amigo siempre presente"</td>
+                            <td>Sandro Panduro / David Mamani </td>
+                            <td>Coral UPeU</td>
                         </tr>
                     </table>`,
         'martes:esperanza': `<h3>Turno Mañana</h3>
@@ -72,16 +72,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <th>Canto de Despedida</th>
                                 </tr>
                                 <tr>
-                                    <td>Ana Torres</td>
-                                    <td>13/09/2024</td>
-                                    <td>Coral Esperanza</td>
-                                    <td>Pedro Gómez</td>
-                                    <td>Sra. Martínez</td>
-                                    <td>Premio al Esfuerzo</td>
-                                    <td>Coral Esperanza</td>
-                                    <td>Esperanza y Fe</td>
-                                    <td>Lucía Fernández</td>
-                                    <td>Hasta la Próxima</td>
+                                    <td>FCS</td>
+                                    <td>Martes 17</td>
+                                    <td>Coral UPeU</td>
+                                    <td>Yojhan Ticona / Lucero Flores</td>
+                                    <td>Ruth Mamani</td>
+                                    <td>Sara Pazo</td>
+                                    <td>Blanca Condori</td>
+                                    <td>"Un Amigo que te capacita"</td>
+                                    <td>Sandro Panduro / Wilberth Maluquish</td>
+                                    <td>Coral UPeU</td>
                                 </tr>
                             </table>
                             <h3>Turno Tarde</h3>
@@ -99,16 +99,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <th>Canto de Despedida</th>
                                 </tr>
                                 <tr>
-                                    <td>José López</td>
-                                    <td>13/09/2024</td>
-                                    <td>Ministerio de Alabanza</td>
-                                    <td>Carlos Ruiz</td>
-                                    <td>Pastor Gómez</td>
-                                    <td>Premio a la Dedicación</td>
-                                    <td>Banda Esperanza</td>
-                                    <td>La Fe Inquebrantable</td>
-                                    <td>María Gómez</td>
-                                    <td>Hasta Siempre</td>
+                                    <td>FCS</td>
+                                    <td>Martes 17</td>
+                                    <td>Coral UPeU</td>
+                                    <td>Daniel Pari / Katerine Condori </td>
+                                    <td>Raquel Antesana</td>
+                                    <td>Sara Pazo</td>
+                                    <td>Saraí Chávez</td>
+                                    <td>"Un Amigo que te capacita"</td>
+                                    <td>Sandro Panduro / Denis Julián</td>
+                                    <td>Coral UPeU</td>
                                 </tr>
                             </table>`,
         'miercoles:oracion': `<h3>Turno Mañana</h3>
@@ -126,16 +126,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <th>Canto de Despedida</th>
                                 </tr>
                                 <tr>
-                                    <td>Carlos Ruiz</td>
-                                    <td>14/09/2024</td>
-                                    <td>Ministerio de Alabanza</td>
-                                    <td>Esther Pérez</td>
-                                    <td>Pastor Morales</td>
-                                    <td>Reconocimiento Especial</td>
-                                    <td>Grupo Musical</td>
-                                    <td>Oración y Esperanza</td>
-                                    <td>María Gómez</td>
-                                    <td>Adiós</td>
+                                    <td>FIA</td>
+                                    <td>Miércoles 18</td>
+                                    <td>Coral UPeU</td>
+                                    <td>Kevin Hilasaca / Mileydy Condori</td>
+                                    <td>Eduardo Vigo</td>
+                                    <td>Sara Pazo</td>
+                                    <td>Vocal Confía</td>
+                                    <td>"Un Amigo que puede trasformar tu vida"</td>
+                                    <td>Sandro Panduro / Elías Hurtado</td>
+                                    <td>Coral UPeU</td>
                                 </tr>
                             </table>
                             <h3>Turno Tarde</h3>
@@ -153,16 +153,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <th>Canto de Despedida</th>
                                 </tr>
                                 <tr>
-                                    <td>Lucía Torres</td>
-                                    <td>14/09/2024</td>
-                                    <td>Orquesta Sinfónica</td>
-                                    <td>Iván Ramírez</td>
-                                    <td>Pastor Gómez</td>
-                                    <td>Premio a la Fe</td>
-                                    <td>Orquesta Sinfónica</td>
-                                    <td>Alabanza y Gloria</td>
-                                    <td>José Martínez</td>
-                                    <td>Hasta Mañana</td>
+                                    <td>FIA</td>
+                                    <td>Miércoles 18</td>
+                                    <td>Coral UPeU</td>
+                                    <td>Yojhan Ticona / Lucero Flores</td>
+                                    <td>Juan Almirón</td>
+                                    <td>Sara Pazo</td>
+                                    <td>Amigos de Jesús</td>
+                                    <td>"Un Amigo que puede trasformar tu vida"</td>
+                                    <td>Sandro Panduro / Jack Brañez </td>
+                                    <td>Coral UPeU</td>
                                 </tr>
                             </table>`,
         'jueves:alabanza': `<h3>Turno Mañana</h3>
@@ -180,16 +180,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <th>Canto de Despedida</th>
                                 </tr>
                                 <tr>
-                                    <td>Laura Morales</td>
-                                    <td>15/09/2024</td>
-                                    <td>Cantata</td>
-                                    <td>Iván Ramírez</td>
-                                    <td>Pastor Gómez</td>
-                                    <td>Premio a la Dedicación</td>
-                                    <td>Orquesta Sinfónica</td>
-                                    <td>Alabanza y Gloria</td>
-                                    <td>José Martínez</td>
-                                    <td>Hasta Siempre</td>
+                                    <td>ISTAT</td>
+                                    <td>Jueves 19</td>
+                                    <td>Coral UPeU</td>
+                                    <td>Kevin Hilasaca / Mileydy Condori</td>
+                                    <td>Marizol Chambi</td>
+                                    <td>Sara Pazo</td>
+                                    <td>Katerin Condori</td>
+                                    <td>"Un Amigo que te lleva a la salvación"</td>
+                                    <td>Sandro Panduro / Grower Maguiña</td>
+                                    <td>Coral UPeU</td>
                                 </tr>
                             </table>
                             <h3>Turno Tarde</h3>
@@ -207,16 +207,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <th>Canto de Despedida</th>
                                 </tr>
                                 <tr>
-                                    <td>José Ramírez</td>
-                                    <td>15/09/2024</td>
-                                    <td>Banda Musical</td>
-                                    <td>Esther Ruiz</td>
-                                    <td>Pastor Smith</td>
-                                    <td>Reconocimiento a la Devoción</td>
-                                    <td>Banda Musical</td>
-                                    <td>Fe y Esperanza</td>
-                                    <td>Laura Torres</td>
-                                    <td>Hasta la Próxima</td>
+                                    <td>ISTAT</td>
+                                    <td>Jueves 19</td>
+                                    <td>Coral UPeU</td>
+                                    <td>Daniel Pari / Katerine Condori</td>
+                                    <td>Josué Huaycani</td>
+                                    <td>Sara Pazo</td>
+                                    <td>Josué Mantilla</td>
+                                    <td>"Un Amigo que te lleva a la salvación"</td>
+                                    <td>Sandro Panduro / Grower Maguiña</td>
+                                    <td>Coral UPeU</td>
                                 </tr>
                             </table>`,
         'viernes:musica': `<h3>Turno Mañana</h3>
@@ -234,43 +234,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <th>Canto de Despedida</th>
                                 </tr>
                                 <tr>
-                                    <td>Rosa Hernández</td>
-                                    <td>16/09/2024</td>
-                                    <td>Festival de Música</td>
-                                    <td>David Ruiz</td>
-                                    <td>Sra. López</td>
-                                    <td>Premio de Reconocimiento</td>
-                                    <td>Banda de Música</td>
-                                    <td>Cantos de Inspiración</td>
-                                    <td>Esteban Pérez</td>
-                                    <td>Adiós y Bendiciones</td>
-                                </tr>
-                            </table>
-                            <h3>Turno Tarde</h3>
-                            <table class="program-table">
-                                <tr>
-                                    <th>E.P. Ujieres</th>
-                                    <th>Fecha</th>
-                                    <th>Espacio de Alabanzas</th>
-                                    <th>Bienvenida</th>
-                                    <th>Oración</th>
-                                    <th>Premiación</th>
-                                    <th>Alabanza Musical</th>
-                                    <th>Tema</th>
-                                    <th>Bautismo</th>
-                                    <th>Canto de Despedida</th>
-                                </tr>
-                                <tr>
-                                    <td>Jorge Gómez</td>
-                                    <td>16/09/2024</td>
-                                    <td>Grupo de Cuerdas</td>
-                                    <td>María Ramírez</td>
-                                    <td>Pastor Morales</td>
-                                    <td>Premio al Espíritu</td>
-                                    <td>Coral Sinfónica</td>
-                                    <td>La Música y la Fe</td>
-                                    <td>Claudia Ruiz</td>
-                                    <td>Hasta Pronto</td>
+                                    <td>FACIHED</td>
+                                    <td>Viernes 20</td>
+                                    <td>Coral UPeU</td>
+                                    <td>Yojhan Ticona / Lucero Flores</td>
+                                    <td>Germán Mamani</td>
+                                    <td>Sara Pazo</td>
+                                    <td>Génesis Coaquira</td>
+                                    <td>"Un amigo que no quiere dejarte"</td>
+                                    <td>Sandro Panduro / Faimes Palacios</td>
+                                    <td>Coral UPeU</td>
                                 </tr>
                             </table>`
     };
