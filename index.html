@@ -12,20 +12,19 @@
 </head>
 <body>
 <!-- Nuevo Header con imagen de fondo -->
-<header>
-    <div class="header-content">
-        <h1 class="titulo-amigo">MI AMIGO EL</h1>
-        <h1 class="titulo-espiritu">Espíritu</h1>
-        <h1 class="titulo-santo">Santo</h1>
-        <h3>14 SETIEMBRE AL 21 DE SETIEMBRE</h3>
+<header class="header">
+    <h1>II Semana de Énfasis Espiritual</h1>
+    <div class="event-details">
+        <p>Del 14 al 21 de Setiembre</p>
         <p>Lugar: Auditorio Fernando Stahl</p>
     </div>
 </header>
-
 <!-- Nueva Barra de Navegación -->
 <div class="nav-container">
     <nav>
-        <ul>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-list">
             <li><a href="#bienvenida">Bienvenida</a></li>
             <li><a href="#programacion">Programación</a></li>
             <li><a href="#pedidos-de-oracion">Mi decisión</a></li>
@@ -34,20 +33,18 @@
         </ul>
     </nav>
 </div>
-
-<!-- Sección principal en dos columnas: Bienvenida y Biografía ocupando todo el ancho -->
 <main style="margin-top: 30px;">
-    <div class="main-container" style="display: flex; justify-content: space-between; align-items: stretch; width: 100%; padding: 0 20px; box-sizing: border-box;">
+    <div class="main-container">
         <!-- Sección de Bienvenida -->
-        <section id="bienvenida" class="section-column" style="flex: 1; margin-right: 20px; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+        <section id="bienvenida" class="section-column">
             <h2>Bienvenida</h2>
             <img src="img/so.jpeg" alt="Semana de Oración" style="width: 100%; height: auto; margin-bottom: 20px;">
             <p>Mensaje de bienvenida de parte de la institución y líderes organizadores.</p>
         </section>
 
         <!-- Sección de Biografía -->
-        <section id="biografia" class="section-column bio-container" style="flex: 1; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-            <img src="https://files.adventistas.org/noticias/es/2023/04/11162308/Socrates-Quispe-Condori-copiar-1536x1043.jpg" alt="Imagen del Orador" class="bio-img" style="width: 150px; height: 150px; margin-bottom: 20px;">
+        <section id="biografia" class="section-column bio-container">
+            <img src="https://files.adventistas.org/noticias/es/2023/04/11162308/Socrates-Quispe-Condori-copiar-1536x1043.jpg" alt="Imagen del Orador" class="bio-img">
             <div class="bio-text">
                 <h3>Sócrates Quispe</h3>
                 <h4>Biografía</h4>
@@ -84,11 +81,10 @@
         <!-- Deseo Bautizarme -->
         <section id="bautismo" class="section-column">
             <h2>Mi decisión</h2>
-            <iframe width="640px" height="480px" src="https://forms.office.com/r/Jcq6147YqT?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+            <iframe src="https://forms.office.com/r/Jcq6147YqT?embed=true" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
         </section>
     </div>
 </main>
-
 <!-- Sección de comisiones -->
 <section id="comisiones" class="section-column">
     <h2>Comisiones</h2>

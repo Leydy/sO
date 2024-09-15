@@ -1,212 +1,360 @@
-/* Estilos generales */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+  /* Estilos generales */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #F4F4F4; /* Color de fondo claro */
-  color: #333;
-  line-height: 1.6;
-}
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F4F4F4; /* Color de fondo claro */
+    color: #333;
+    line-height: 1.6;
+  }
 
-/* Nuevo estilo del Header */
-header {
+  /* Nuevo estilo del Header */
+  .header {
     background-image: url('https://cdn.pixabay.com/photo/2016/11/29/04/50/blur-1867402_1280.jpg');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    color: white;
-    padding: 20px;
+    color: #260963;
+    padding: 4rem 2rem;
     text-align: center;
-}
+    position: relative;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .header-content {
+    position: relative;
+    z-index: 2;
+  }
+  .header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  .header p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  .event-details {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    backdrop-filter: blur(5px);
+  }
 
-.header-content {
+
+  /* Estilos específicos para la biografía */
+  .bio-container {
+    padding: 40px;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .bio-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+
+  .bio-text {
+    max-width: 100%;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #260963, #D3A6F2);
+    color: #fff; /* Texto blanco */
+  }
+
+  .bio-text h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .bio-text h4 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #F7B82C; /* Amarillo */
+    border-bottom: 2px solid #F7B82C;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+  }
+
+  /* Estilo general para tablas */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px; /* Ajustar el tamaño de fuente para que la tabla sea más compacta */
+  }
+
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    overflow-wrap: break-word; /* Asegura que el texto largo se ajuste dentro del contenedor */
+    word-break: break-word; /* Rompe el texto largo en palabras */
+  }
+
+  th {
+    background-color: #260963; /* Morado oscuro */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  td {
+    background-color: #F9F9F9;
+    text-align: left;
+  }
+
+  /* Hacer que la tabla se vea responsiva en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    /* Ocultar el encabezado de las tablas en dispositivos pequeños */
+    thead {
+      display: none;
+    }
+
+    tr {
+      display: block;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    td {
+      display: block;
+      text-align: right;
+    }
+
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      margin-bottom: 15px;
+    }
+
+    td {
+      border: none;
+      position: relative;
+    }
+
+    td::before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-label);
+      font-weight: bold;
+    }
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .section-column {
+    flex: 1 1 calc(50% - 10px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .bio-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-}
+  }
 
-.header-content h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3em;
-    margin: 0.2em 0;
-    color: #A07BF0;
-}
+  .bio-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-.header-content h3, .header-content p {
-    font-size: 1.2em;
-    margin: 0.2em 0;
-}
+  .bio-text {
+    text-align: center;
+  }
 
-/* Nueva barra de navegación */
-.nav-container {
+  #programacion {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .program-select {
+    margin-bottom: 20px;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 480px;
+    border: none;
+    max-width: 100%;
+    max-height: 100vh;
+  }
+
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+    }
+
+    .section-column {
+      flex: 1 1 100%;
+      margin-right: 0;
+    }
+  }
+  /* Estilos generales del menú */
+  .nav-container {
     display: flex;
     justify-content: center;
-    background-color: #A07BF0;
+    background-color: #260963;
     padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
-}
+  }
 
-nav ul {
+  nav ul {
     list-style: none;
+    text-align: center;
     display: flex;
     gap: 15px;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-}
+  }
 
-nav ul li {
+  nav ul li {
     display: inline-block;
-}
+  }
 
-nav ul li a {
+  nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 25px;
     transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #D27F6D;
-}
-
-/* Sección principal con dos columnas */
-.main-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Asegura que las columnas ocupen el espacio */
-.section-column {
-  flex: 1;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
-}
-
-/* Para que la última columna no tenga margen derecho */
-.section-column:last-child {
-  margin-right: 0;
-}
-
-/* Estilos específicos para la biografía */
-.bio-container {
-  padding: 40px;
-  background-color: #f9f9f9; /* Fondo gris claro */
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.bio-img {
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
-}
-
-.bio-text {
-  max-width: 100%;
-  text-align: left;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #A07BF0, #D3A6F2);
-  color: #fff; /* Texto blanco */
-}
-
-.bio-text h3 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 32px;
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.bio-text h4 {
-  font-size: 24px;
-  margin-top: 20px;
-  color: #F7B82C; /* Amarillo */
-  border-bottom: 2px solid #F7B82C;
-  padding-bottom: 8px;
-  margin-bottom: 10px;
-}
-
-/* Estilo responsivo para tablas */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-  font-size: 14px; /* Ajustar el tamaño de fuente para que la tabla sea más compacta */
-}
-
-th, td {
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-th {
-  background-color: #A07BF0; /* Morado oscuro */
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-}
-
-td {
-  background-color: #F9F9F9;
-  text-align: left;
-}
-
-/* Hacer que la tabla se vea responsiva en pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
   }
 
-  /* Ocultar el encabezado de las tablas en dispositivos pequeños */
-  thead {
+  nav ul li a:hover {
+    background-color: #D27F6D;
+  }
+
+  /* Menú desplegable en pantallas pequeñas */
+  .menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Menú desplegable */
+  .menu-toggle {
     display: none;
   }
 
-  tr {
-    display: block;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
+  .nav-list {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
   }
 
-  td {
-    display: block;
-    text-align: right;
-  }
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none;
+      flex-direction: column; 
+      background-color: #260963; 
+      position: absolute; 
+      top: 60px; 
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 0; 
+    }
 
-  td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    font-weight: bold;
-    text-align: left;
+    .nav-list li {
+      display: block; 
+      margin: 0; 
+    }
+
+    .nav-list li a {
+      padding: 10px; 
+      border-radius: 0; 
+    }
+
+    .menu-icon {
+      display: block; 
+    }
+
+    .menu-toggle:checked + .menu-icon + .nav-list {
+      display: flex; 
+    }
   }
-}
