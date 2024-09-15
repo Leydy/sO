@@ -12,39 +12,6 @@
     line-height: 1.6;
   }
 
-  /* Nuevo estilo del Header */
-  .header {
-    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/04/50/blur-1867402_1280.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #260963;
-    padding: 4rem 2rem;
-    text-align: center;
-    position: relative;
-  }
-  .header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-  }
-  .header-content {
-    position: relative;
-    z-index: 2;
-  }
-  .header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  }
-  .header p {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-  }
   .event-details {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 1rem;
@@ -358,3 +325,41 @@
       display: flex; 
     }
   }
+  .container {
+    max-width: 800px;
+    width: 100%;
+}
+#day-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.post-it {
+    background-color: #260963;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.post-it:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+.post-it h2, h3 {
+    color: white;
+    margin-top: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+ th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.post-it th {
+    background-color: #f2f2f2;
+    color: black;
+}

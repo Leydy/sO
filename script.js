@@ -3,249 +3,139 @@ document.addEventListener('DOMContentLoaded', () => {
     const scheduleContent = document.getElementById('schedule-content');
 
     const schedules = {
-        'lunes:fe': `<h3>Turno Mañana</h3>
-                    <table class="program-table">
-                        <tr>
-                            <th>E.P. Ujieres</th>
-                            <th>Fecha</th>
-                            <th>Espacio de Alabanzas</th>
-                            <th>Bienvenida</th>
-                            <th>Oración</th>
-                            <th>Premiación</th>
-                            <th>Alabanza Musical</th>
-                            <th>Tema</th>
-                            <th>Bautismo</th>
-                            <th>Canto de Despedida</th>
-                        </tr>
-                        <tr>
-                            <td>FCE</td>
-                            <td>Lunes 16</td>
-                            <td>Coral UPeU</td>
-                            <td>Daniel Pari / Katerine Condori</td>
-                            <td>Alexander De La Cruz</td>
-                            <td>Sara Pazo</td>
-                            <td>Ana Tito</td>
-                            <td>"Un Amigo siempre presente"</td>
-                            <td>Sandro Panduro / David Mamani</td>
-                            <td>Coral UPeU</td>
-                        </tr>
-                    </table>
-                    <h3>Turno Tarde</h3>
-                    <table class="program-table">
-                        <tr>
-                            <th>E.P. Ujieres</th>
-                            <th>Fecha</th>
-                            <th>Espacio de Alabanzas</th>
-                            <th>Bienvenida</th>
-                            <th>Oración</th>
-                            <th>Premiación</th>
-                            <th>Alabanza Musical</th>
-                            <th>Tema</th>
-                            <th>Bautismo</th>
-                            <th>Canto de Despedida</th>
-                        </tr>
-                        <tr>
-                            <td>FCE</td>
-                            <td>Lunes 16</td>
-                            <td>Coral UPeU</td>
-                            <td>Sarai Cuti / Kevin Hilasaca</td>
-                            <td>Edgar Mamani</td>
-                            <td>Sara Pazo</td>
-                            <td>Alejandro Apaza</td>
-                            <td>"Un Amigo siempre presente"</td>
-                            <td>Sandro Panduro / David Mamani </td>
-                            <td>Coral UPeU</td>
-                        </tr>
-                    </table>`,
-        'martes:esperanza': `<h3>Turno Mañana</h3>
-                            <table class="program-table">
-                                <tr>
-                                    <th>E.P. Ujieres</th>
-                                    <th>Fecha</th>
-                                    <th>Espacio de Alabanzas</th>
-                                    <th>Bienvenida</th>
-                                    <th>Oración</th>
-                                    <th>Premiación</th>
-                                    <th>Alabanza Musical</th>
-                                    <th>Tema</th>
-                                    <th>Bautismo</th>
-                                    <th>Canto de Despedida</th>
-                                </tr>
-                                <tr>
-                                    <td>FCS</td>
-                                    <td>Martes 17</td>
-                                    <td>Coral UPeU</td>
-                                    <td>Yojhan Ticona / Lucero Flores</td>
-                                    <td>Ruth Mamani</td>
-                                    <td>Sara Pazo</td>
-                                    <td>Blanca Condori</td>
-                                    <td>"Un Amigo que te capacita"</td>
-                                    <td>Sandro Panduro / Wilberth Maluquish</td>
-                                    <td>Coral UPeU</td>
-                                </tr>
-                            </table>
-                            <h3>Turno Tarde</h3>
-                            <table class="program-table">
-                                <tr>
-                                    <th>E.P. Ujieres</th>
-                                    <th>Fecha</th>
-                                    <th>Espacio de Alabanzas</th>
-                                    <th>Bienvenida</th>
-                                    <th>Oración</th>
-                                    <th>Premiación</th>
-                                    <th>Alabanza Musical</th>
-                                    <th>Tema</th>
-                                    <th>Bautismo</th>
-                                    <th>Canto de Despedida</th>
-                                </tr>
-                                <tr>
-                                    <td>FCS</td>
-                                    <td>Martes 17</td>
-                                    <td>Coral UPeU</td>
-                                    <td>Daniel Pari / Katerine Condori </td>
-                                    <td>Raquel Antesana</td>
-                                    <td>Sara Pazo</td>
-                                    <td>Saraí Chávez</td>
-                                    <td>"Un Amigo que te capacita"</td>
-                                    <td>Sandro Panduro / Denis Julián</td>
-                                    <td>Coral UPeU</td>
-                                </tr>
-                            </table>`,
-        'miercoles:oracion': `<h3>Turno Mañana</h3>
-                            <table class="program-table">
-                                <tr>
-                                    <th>E.P. Ujieres</th>
-                                    <th>Fecha</th>
-                                    <th>Espacio de Alabanzas</th>
-                                    <th>Bienvenida</th>
-                                    <th>Oración</th>
-                                    <th>Premiación</th>
-                                    <th>Alabanza Musical</th>
-                                    <th>Tema</th>
-                                    <th>Bautismo</th>
-                                    <th>Canto de Despedida</th>
-                                </tr>
-                                <tr>
-                                    <td>FIA</td>
-                                    <td>Miércoles 18</td>
-                                    <td>Coral UPeU</td>
-                                    <td>Kevin Hilasaca / Mileydy Condori</td>
-                                    <td>Eduardo Vigo</td>
-                                    <td>Sara Pazo</td>
-                                    <td>Vocal Confía</td>
-                                    <td>"Un Amigo que puede trasformar tu vida"</td>
-                                    <td>Sandro Panduro / Elías Hurtado</td>
-                                    <td>Coral UPeU</td>
-                                </tr>
-                            </table>
-                            <h3>Turno Tarde</h3>
-                            <table class="program-table">
-                                <tr>
-                                    <th>E.P. Ujieres</th>
-                                    <th>Fecha</th>
-                                    <th>Espacio de Alabanzas</th>
-                                    <th>Bienvenida</th>
-                                    <th>Oración</th>
-                                    <th>Premiación</th>
-                                    <th>Alabanza Musical</th>
-                                    <th>Tema</th>
-                                    <th>Bautismo</th>
-                                    <th>Canto de Despedida</th>
-                                </tr>
-                                <tr>
-                                    <td>FIA</td>
-                                    <td>Miércoles 18</td>
-                                    <td>Coral UPeU</td>
-                                    <td>Yojhan Ticona / Lucero Flores</td>
-                                    <td>Juan Almirón</td>
-                                    <td>Sara Pazo</td>
-                                    <td>Amigos de Jesús</td>
-                                    <td>"Un Amigo que puede trasformar tu vida"</td>
-                                    <td>Sandro Panduro / Jack Brañez </td>
-                                    <td>Coral UPeU</td>
-                                </tr>
-                            </table>`,
-        'jueves:alabanza': `<h3>Turno Mañana</h3>
-                            <table class="program-table">
-                                <tr>
-                                    <th>E.P. Ujieres</th>
-                                    <th>Fecha</th>
-                                    <th>Espacio de Alabanzas</th>
-                                    <th>Bienvenida</th>
-                                    <th>Oración</th>
-                                    <th>Premiación</th>
-                                    <th>Alabanza Musical</th>
-                                    <th>Tema</th>
-                                    <th>Bautismo</th>
-                                    <th>Canto de Despedida</th>
-                                </tr>
-                                <tr>
-                                    <td>ISTAT</td>
-                                    <td>Jueves 19</td>
-                                    <td>Coral UPeU</td>
-                                    <td>Kevin Hilasaca / Mileydy Condori</td>
-                                    <td>Marizol Chambi</td>
-                                    <td>Sara Pazo</td>
-                                    <td>Katerin Condori</td>
-                                    <td>"Un Amigo que te lleva a la salvación"</td>
-                                    <td>Sandro Panduro / Grower Maguiña</td>
-                                    <td>Coral UPeU</td>
-                                </tr>
-                            </table>
-                            <h3>Turno Tarde</h3>
-                            <table class="program-table">
-                                <tr>
-                                    <th>E.P. Ujieres</th>
-                                    <th>Fecha</th>
-                                    <th>Espacio de Alabanzas</th>
-                                    <th>Bienvenida</th>
-                                    <th>Oración</th>
-                                    <th>Premiación</th>
-                                    <th>Alabanza Musical</th>
-                                    <th>Tema</th>
-                                    <th>Bautismo</th>
-                                    <th>Canto de Despedida</th>
-                                </tr>
-                                <tr>
-                                    <td>ISTAT</td>
-                                    <td>Jueves 19</td>
-                                    <td>Coral UPeU</td>
-                                    <td>Daniel Pari / Katerine Condori</td>
-                                    <td>Josué Huaycani</td>
-                                    <td>Sara Pazo</td>
-                                    <td>Josué Mantilla</td>
-                                    <td>"Un Amigo que te lleva a la salvación"</td>
-                                    <td>Sandro Panduro / Grower Maguiña</td>
-                                    <td>Coral UPeU</td>
-                                </tr>
-                            </table>`,
-        'viernes:musica': `<h3>Turno Mañana</h3>
-                            <table class="program-table">
-                                <tr>
-                                    <th>E.P. Ujieres</th>
-                                    <th>Fecha</th>
-                                    <th>Espacio de Alabanzas</th>
-                                    <th>Bienvenida</th>
-                                    <th>Oración</th>
-                                    <th>Premiación</th>
-                                    <th>Alabanza Musical</th>
-                                    <th>Tema</th>
-                                    <th>Bautismo</th>
-                                    <th>Canto de Despedida</th>
-                                </tr>
-                                <tr>
-                                    <td>FACIHED</td>
-                                    <td>Viernes 20</td>
-                                    <td>Coral UPeU</td>
-                                    <td>Yojhan Ticona / Lucero Flores</td>
-                                    <td>Germán Mamani</td>
-                                    <td>Sara Pazo</td>
-                                    <td>Génesis Coaquira</td>
-                                    <td>"Un amigo que no quiere dejarte"</td>
-                                    <td>Sandro Panduro / Faimes Palacios</td>
-                                    <td>Coral UPeU</td>
-                                </tr>
-                            </table>`
+        'lunes:fe': `
+            <div class="post-it">
+                <h2>Lunes - Un Amigo siempre presente</h2>
+                <h3>Turno Mañana</h3>
+                <table>
+                    <tr><th>E.P. Ujieres</th><td>E.P. de Administración</td></tr>
+                    <tr><th>Fecha</th><td>Lunes 16</td></tr>
+                    <tr><th>Espacio de Alabanzas</th><td>Coral UPeU</td></tr>
+                    <tr><th>Bienvenida</th><td>Daniel Pari / Katerine Condori</td></tr>
+                    <tr><th>Oración</th><td>Alexander De La Cruz</td></tr>
+                    <tr><th>Premiación</th><td>Sara Pazo</td></tr>
+                    <tr><th>Alabanza Musical</th><td>Ana Tito</td></tr>
+                    <tr><th>Bautismo</th><td>Sandro Panduro / David Mamani</td></tr>
+                    <tr><th>Canto de Despedida</th><td>Coral UPeU</td></tr>
+                </table>
+                <h3>Turno Tarde</h3>
+                <table>
+                    <tr><th>E.P. Ujieres</th><td>E.P. de Contabilidad</td></tr>
+                    <tr><th>Fecha</th><td>Lunes 16</td></tr>
+                    <tr><th>Espacio de Alabanzas</th><td>Coral UPeU</td></tr>
+                    <tr><th>Bienvenida</th><td>Sarai Cuti / Kevin Hilasaca</td></tr>
+                    <tr><th>Oración</th><td>Edgar Mamani</td></tr>
+                    <tr><th>Premiación</th><td>Sara Pazo</td></tr>
+                    <tr><th>Alabanza Musical</th><td>Alejandro Apaza</td></tr>
+                    <tr><th>Bautismo</th><td>Sandro Panduro / David Mamani</td></tr>
+                    <tr><th>Canto de Despedida</th><td>Coral UPeU</td></tr>
+                </table>
+            </div>
+        `,
+        'martes:esperanza': `
+            <div class="post-it">
+                <h2>Martes - Un Amigo que capacita</h2>
+                <h3>Turno Mañana</h3>
+                <table>
+                    <tr><th>E.P. Ujieres</th><td>E.P. de Enfermería / E.P. de Nutrición</td></tr>
+                    <tr><th>Fecha</th><td>Martes 17</td></tr>
+                    <tr><th>Espacio de Alabanzas</th><td>Coral UPeU</td></tr>
+                    <tr><th>Bienvenida</th><td>Yojhan Ticona / Lucero Flores</td></tr>
+                    <tr><th>Oración</th><td>Ruth Mamani</td></tr>
+                    <tr><th>Premiación</th><td>Sara Pazo</td></tr>
+                    <tr><th>Alabanza Musical</th><td>Blanca Condori</td></tr>
+                    <tr><th>Bautismo</th><td>Sandro Panduro / Wilberth Maluquish</td></tr>
+                    <tr><th>Canto de Despedida</th><td>Coral UPeU</td></tr>
+                </table>
+                <h3>Turno Tarde</h3>
+                <table>
+                    <tr><th>E.P. Ujieres</th><td>Gestión del Talento Humano / Bienestar Universitario</td></tr>
+                    <tr><th>Fecha</th><td>Martes 17</td></tr>
+                    <tr><th>Espacio de Alabanzas</th><td>Coral UPeU</td></tr>
+                    <tr><th>Bienvenida</th><td>Daniel Pari / Katerine Condori</td></tr>
+                    <tr><th>Oración</th><td>Raquel Antesana</td></tr>
+                    <tr><th>Premiación</th><td>Sara Pazo</td></tr>
+                    <tr><th>Alabanza Musical</th><td>Saraí Chávez</td></tr>
+                    <tr><th>Bautismo</th><td>Sandro Panduro / Denis Julián</td></tr>
+                    <tr><th>Canto de Despedida</th><td>Coral UPeU</td></tr>
+                </table>
+            </div>
+        `,
+        'miercoles:oracion': `
+            <div class="post-it">
+                <h2>Miércoles - Un Amigo que puede transformar tu vida</h2>
+                <h3>Turno Mañana</h3>
+                <table>
+                    <tr><th>E.P. Ujieres</th><td>E.P. de Ing. Ambiental / E.P. de INDALI</td></tr>
+                    <tr><th>Fecha</th><td>Miércoles 18</td></tr>
+                    <tr><th>Espacio de Alabanzas</th><td>Coral UPeU</td></tr>
+                    <tr><th>Bienvenida</th><td>Kevin Hilasaca / Mileydy Condori</td></tr>
+                    <tr><th>Oración</th><td>Eduardo Vigo</td></tr>
+                    <tr><th>Premiación</th><td>Sara Pazo</td></tr>
+                    <tr><th>Alabanza Musical</th><td>Vocal Confía</td></tr>
+                    <tr><th>Bautismo</th><td>Sandro Panduro / Elías Hurtado</td></tr>
+                    <tr><th>Canto de Despedida</th><td>Coral UPeU</td></tr>
+                </table>
+                <h3>Turno Tarde</h3>
+                <table>
+                    <tr><th>E.P. Ujieres</th><td>E.P. de Ing. Civil</td></tr>
+                    <tr><th>Fecha</th><td>Miércoles 18</td></tr>
+                    <tr><th>Espacio de Alabanzas</th><td>Coral UPeU</td></tr>
+                    <tr><th>Bienvenida</th><td>Yojhan Ticona / Lucero Flores</td></tr>
+                    <tr><th>Oración</th><td>Juan Almirón</td></tr>
+                    <tr><th>Premiación</th><td>Sara Pazo</td></tr>
+                    <tr><th>Alabanza Musical</th><td>Amigos de Jesús</td></tr>
+                    <tr><th>Bautismo</th><td>Sandro Panduro / Jack Brañez</td></tr>
+                    <tr><th>Canto de Despedida</th><td>Coral UPeU</td></tr>
+                </table>
+            </div>
+        `,
+        'jueves:alabanza': `
+            <div class="post-it">
+                <h2>Jueves -  Un Amigo que te lleva a la salvación</h2>
+                <h3>Turno Mañana</h3>
+                <table>
+                    <tr><th>E.P. Ujieres</th><td>ISTAT / E.P. de Ing. de Sistemas</td></tr>
+                    <tr><th>Fecha</th><td>Jueves 19</td></tr>
+                    <tr><th>Espacio de Alabanzas</th><td>Coral UPeU</td></tr>
+                    <tr><th>Bienvenida</th><td>Kevin Hilasaca / Mileydy Condori</td></tr>
+                    <tr><th>Oración</th><td>Marizol Chambi</td></tr>
+                    <tr><th>Premiación</th><td>Sara Pazo</td></tr>
+                    <tr><th>Alabanza Musical</th><td>Katerin Condori</td></tr>
+                    <tr><th>Bautismo</th><td>Sandro Panduro / Grower Maguiña</td></tr>
+                    <tr><th>Canto de Despedida</th><td>Coral UPeU</td></tr>
+                </table>
+                <h3>Turno Tarde</h3>
+                <table>
+                    <tr><th>E.P. Ujieres</th><td>E.P. de Arquitectura</td></tr>
+                    <tr><th>Fecha</th><td>Jueves 19</td></tr>
+                    <tr><th>Espacio de Alabanzas</th><td>Coral UPeU</td></tr>
+                    <tr><th>Bienvenida</th><td>Daniel Pari / Katerine Condori</td></tr>
+                    <tr><th>Oración</th><td>Josué Huaycani</td></tr>
+                    <tr><th>Premiación</th><td>Sara Pazo</td></tr>
+                    <tr><th>Alabanza Musical</th><td>Josué Mantilla</td></tr>
+                    <tr><th>Bautismo</th><td>Sandro Panduro / Grower Maguiña</td></tr>
+                    <tr><th>Canto de Despedida</th><td>Coral UPeU</td></tr>
+                </table>
+            </div>
+        `,
+        'viernes:musica': `
+            <div class="post-it">
+                <h2>Viernes - Un Amigo que no quiere dejarte</h2>
+                <h3>Turno Mañana</h3>
+                <table>
+                    <tr><th>E.P. Ujieres</th><td>E.P. de Psicología</td></tr>
+                    <tr><th>Fecha</th><td>Viernes 20</td></tr>
+                    <tr><th>Espacio de Alabanzas</th><td>Coral UPeU</td></tr>
+                    <tr><th>Bienvenida</th><td>Yojhan Ticona / Lucero Flores</td></tr>
+                    <tr><th>Oración</th><td>Germán Mamani</td></tr>
+                    <tr><th>Premiación</th><td>Sara Pazo</td></tr>
+                    <tr><th>Alabanza Musical</th><td>Génesis Coaquira</td></tr>
+                    <tr><th>Bautismo</th><td>Sandro Panduro / Faimes Palacios</td></tr>
+                    <tr><th>Canto de Despedida</th><td>Coral UPeU</td></tr>
+                </table>
+            </div>
+        `
     };
   
     // Seleccionar el día actual
